@@ -9,10 +9,16 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `The Great Gatsby`,
+    description: `ITDEV-164-600`,
+    author: `Jason Hicks`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    contact: 
+    {
+      name: `Jason Hicks`,
+      company: `Queston Mark Entertainment`,
+      address: `At The Corner Of Nowhere And Everyhwere`
+    }
   },
   plugins: [
     `gatsby-plugin-image`,
