@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 
 const BlogPost = ({ data }) => {
-    const { title } = data.contentfulPageBlogPost;
+    const { title, content } = data.contentfulBlogPost;
 
     return(
         <Layout>
@@ -16,7 +16,7 @@ export default BlogPost;
 
 export const pageQuery = graphql`
     query blogPostQuery($slug: String!) {
-        contentfulPageBlogPost( slug: {eq: $slug})   {
+        contentfulBlogPost( slug: {eq: $slug})   {
             title
             slug
         }
