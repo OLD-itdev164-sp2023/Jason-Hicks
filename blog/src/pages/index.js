@@ -10,7 +10,7 @@ const IndexPage = ({ data }) => (
     <Seo title="Home"/>
     <ul className={styles.list}>
       {
-        data.allContentfulPageBlogPost.edges.map(edge => (
+        data.allContentfulBlogPost.edges.map(edge => (
           <li key={edge.node.id}>
             <Link to={edge.node.slug}>{edge.node.title}</Link>
           </li>
@@ -31,9 +31,9 @@ export default IndexPage
 
 export const query = graphql`
 {
-  allContentfulPageBlogPost	{
-    edges	{
-      node	{
+  allContentfulBlogPost {
+    edges {
+      node {
         id
         title
         slug
