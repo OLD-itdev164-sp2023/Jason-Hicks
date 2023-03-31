@@ -30,7 +30,7 @@ exports.createPages = async ({ graphql, actions }) => {
           {
             slug: edge.node.slug
           },
-          defer: true,
+          //defer: true,
         })
       })
     resolve()
