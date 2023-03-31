@@ -6,7 +6,7 @@
  */
 
 import * as React from "react"
-import { propTypes } from "prop-types"
+//import { propTypes } from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styled, { ThemeProvider } from "styled-components"
 
