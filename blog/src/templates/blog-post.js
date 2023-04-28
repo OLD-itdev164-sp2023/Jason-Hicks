@@ -10,7 +10,7 @@ const BlogPost = ({ data }) => {
     return(
         <Layout>
             <GatsbyImage
-              image={heroImage.GatsbyImageData}
+              image={heroImage.gatsbyImageData}
             />
             <H1>{title}</H1>
             <div dangerouslySetInnerHTML={{__html: body.childMarkdownRemark.html}}></div>
